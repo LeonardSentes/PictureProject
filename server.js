@@ -42,10 +42,10 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-// For setting template engine
+// Set template engine
 app.set("view engine", "ejs");
 
-// For accessing public folder
+// Access public folder
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
